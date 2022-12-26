@@ -1,0 +1,17 @@
+<meta>
+
+<script src = 'functions/index.lua' type = 'client' cache = 'false'/>
+<file src = 'assets/colete-a-prova-de-balas.png'/>
+<file src = 'assets/coracao.png'/>
+<file src = 'assets/colete.png'/>
+<file src = 'assets/vida.png'/>
+<file src = 'assets/img.png'/>
+
+<file src = 'assets/1.png'/>
+<file src = 'assets/2.png'/>
+<file src = 'assets/3.png'/>
+<file src = 'assets/4.png'/>
+
+
+
+</meta>
