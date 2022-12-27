@@ -5,8 +5,8 @@ local x, y = (screenW/resW), (screenH/resH) -- Divisão de altura por largura da
 hud = function () -- função
 vida = getElementHealth(localPlayer) -- variável para pegar vida do player
 colete = getPlayerArmor(localPlayer) -- variável para pegar colete do player
-  dxDrawRectangle(x*806, y*950, x*387/100*vida, y*5, tocolor(255,0,0,255), false) -- função de desenhar o retangulo
-  dxDrawRectangle(x*831, y*925, x*338/100*colete, y*5, tocolor( 11, 255, 226, 255), false) -- função de desenhar o retangulo    11, 255, 226, 255   255, 0, 0, 255)
+  dxDrawRectangle(x*936.57, y*948, x*224.98/100*vida, y*5, tocolor(255,0,0,255), false) -- função de desenhar o retangulo
+  dxDrawRectangle(x*958, y*918, x*178.11/100*colete, y*5, tocolor( 11, 255, 226, 255), false) -- função de desenhar o retangulo    11, 255, 226, 255   255, 0, 0, 255)
 end
 addEventHandler('onClientRender', root, hud) -- evento que chama a função
 
@@ -17,8 +17,9 @@ local screenW, screenH = guiGetScreenSize()
 function renderDisplay ( )
 	local seconds = getTickCount() / 1000
 
-  dxDrawImage ( 831, 925, 338, 10, 'assets/colete.png', 0, 0 )
-  dxDrawImage ( 806.5, 950, 387, 10, 'assets/vida.png', 0, 0 )
+  dxDrawImage ( 958, 918, 178.11, 10, 'assets/11.png', 0, 0 )
+  dxDrawImage ( 936.57, 948, 224.98, 10, 'assets/10.png', 0, 0 )
+
 
 
 
@@ -27,10 +28,13 @@ function renderDisplay ( )
   dxDrawImage ( 994, 62, 62, 65, 'assets/2.png', 0,0)
   dxDrawImage ( 1062, 62, 66, 65, 'assets/3.png', 0,0)
   dxDrawImage ( 1135, 62, 62, 65, 'assets/4.png', 0,0)
+
+
+
 end
 
 function HandleTheRendering ( )
-	addEventHandler("onClientRender", root, renderDisplay) 
+	addEventHandler("onClientRender", root, renderDisplay)  -- Keep everything visible with onClientRender.
 end
 addEventHandler("onClientResourceStart",resourceRoot, HandleTheRendering)
 
