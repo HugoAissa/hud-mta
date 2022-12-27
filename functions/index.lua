@@ -30,7 +30,7 @@ function renderDisplay ( )
 end
 
 function HandleTheRendering ( )
-	addEventHandler("onClientRender", root, renderDisplay)  -- Keep everything visible with onClientRender.
+	addEventHandler("onClientRender", root, renderDisplay) 
 end
 addEventHandler("onClientResourceStart",resourceRoot, HandleTheRendering)
 
